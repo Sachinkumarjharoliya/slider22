@@ -1,0 +1,230 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: ghostwhite;
+  overflow: hidden;
+}
+
+main {
+  width: 80%;
+  height: 600px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  background-position: center;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: absolute;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.left {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  font-size: 3rem;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.right {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  font-size: 3rem;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.bg1 {
+  background-image: url("https://cdn.pixabay.com/photo/2024/01/23/22/27/iguana-8528387_640.jpg");
+}
+
+.bg2 {
+  background-image: url("https://cdn.pixabay.com/photo/2024/01/19/13/27/fog-8519076_1280.jpg");
+}
+
+.bg3 {
+  background-image: url("https://cdn.pixabay.com/photo/2023/12/15/22/37/mountains-8451480_640.jpg");
+}
+
+.bg4 {
+  background-image: url("https://cdn.pixabay.com/photo/2024/01/16/19/40/trees-8512979_640.jpg");
+}
+
+.bg5 {
+  background-image: url("https://cdn.pixabay.com/photo/2023/04/22/07/33/sky-7943218_640.jpg");
+}
+
+.bg6 {
+  background-image: url("https://cdn.pixabay.com/photo/2023/04/09/17/23/flower-7911919_640.jpg");
+}
+
+.bg7 {
+  background-image: url("https://cdn.pixabay.com/photo/2023/09/09/09/03/cheetah-8242729_640.png");
+}
+
+/* gallery part */
+
+.second_section {
+  width: 100%;
+  height: 200px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.gallery {
+  width: 80%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  gap: 1rem;
+  /* overflow: scroll; */
+  flex-wrap: nowrap;
+}
+
+.slidesss {
+  width: 250px;
+  height: 150px;
+  border: 2px solid black;
+  overflow: hidden;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/* .bgsub1{
+      background-image: url('https://cdn.pixabay.com/photo/2023/12/03/18/47/indian-8428022_1280.jpg');
+  } */
+
+.container {
+  max-width: 1590px;
+  width: 115%;
+  margin-left: 188px;
+  margin-top: 20px;
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+.slider-wrapper .image-list {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 18px;
+  font-size: 0;
+  list-style: none;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.slider-wrapper .image-list::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-wrapper .image-list .image-item {
+  width: 300px;
+  height: 180px;
+  object-fit: cover;
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.container .slider-scrollbar {
+  height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slider-scrollbar .scrollbar-track {
+  background: #ccc;
+  width: 100%;
+  height: 2px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  position: relative;
+}
+
+.slider-scrollbar:hover .scrollbar-track {
+  height: 4px;
+}
+
+.slider-scrollbar .scrollbar-thumb {
+  position: absolute;
+  background: green;
+  top: 0;
+  bottom: 0;
+  width: 10%;
+  height: 150%;
+  cursor: grab;
+  border-radius: inherit;
+}
+
+.slider-scrollbar .scrollbar-thumb:active {
+  cursor: grabbing;
+  height: 8px;
+  top: -2px;
+}
+
+.slider-scrollbar .scrollbar-thumb::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
+}
+
+.bg11 {
+  background-image: url("https://cdn.pixabay.com/photo/2024/01/23/22/27/iguana-8528387_640.jpg");
+}
+
+.bg12 {
+  background-image: url("https://cdn.pixabay.com/photo/2024/01/19/13/27/fog-8519076_1280.jpg");
+}
+
+.bg13 {
+  background-image: url("https://cdn.pixabay.com/photo/2023/12/15/22/37/mountains-8451480_640.jpg");
+}
+
+.bg14 {
+  background-image: url("https://cdn.pixabay.com/photo/2024/01/16/19/40/trees-8512979_640.jpg");
+}
+
+.bg15 {
+  background-image: url("https://cdn.pixabay.com/photo/2023/04/22/07/33/sky-7943218_640.jpg");
+}
+
+.bg16 {
+  background-image: url("https://cdn.pixabay.com/photo/2023/04/09/17/23/flower-7911919_640.jpg");
+}
+
+.bg17 {
+  background-image: url("https://cdn.pixabay.com/photo/2023/09/09/09/03/cheetah-8242729_640.png");
+}
